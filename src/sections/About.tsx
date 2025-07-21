@@ -6,30 +6,30 @@ import profile from '../assets/g2.jpg'
 
 const About = () => {
   const team = [
-    {
-      name: "Priya Sharma",
-      role: "Founder & Lead Artist",
-      image: "https://images.pexels.com/photos/3992656/pexels-photo-3992656.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-      bio: "10+ years in bridal makeup artistry"
-    },
-    {
-      name: "Meera Krishnan",
-      role: "Hair Styling Expert",
-      image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-      bio: "Specialized in traditional & modern styles"
-    },
-    {
-      name: "Anita Rajesh",
-      role: "Beauty Educator",
-      image: "https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-      bio: "Certified trainer with 8+ years experience"
-    },
-    {
-      name: "Kavya Reddy",
-      role: "Microblading Specialist",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
-      bio: "Expert in eyebrow sculpting & enhancement"
-    }
+    // {
+    //   name: "Priya Sharma",
+    //   role: "Founder & Lead Artist",
+    //   image: "https://images.pexels.com/photos/3992656/pexels-photo-3992656.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
+    //   bio: "10+ years in bridal makeup artistry"
+    // },
+    // {
+    //   name: "Meera Krishnan",
+    //   role: "Hair Styling Expert",
+    //   image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
+    //   bio: "Specialized in traditional & modern styles"
+    // },
+    // // {
+    //   name: "Anita Rajesh",
+    //   role: "Beauty Educator",
+    //   image: "https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
+    //   bio: "Certified trainer with 8+ years experience"
+    // },
+    // {
+    //   name: "Kavya Reddy",
+    //   role: "Microblading Specialist",
+    //   image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop",
+    //   bio: "Expert in eyebrow sculpting & enhancement"
+    // }
   ];
 
   const values = [
@@ -159,43 +159,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <ScrollAnimations animation="fadeIn">
-            <div className="text-center mb-12 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 text-shimmer">Meet Our Team</h2>
-              <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-              Skilled professionals passionate about creating beauty and empowering others
-              </p>
-            </div>
-          </ScrollAnimations>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            {team.map((member, index) => (
-              <ScrollAnimations 
-                key={index} 
-                animation={index % 2 === 0 ? 'slideInLeft' : 'slideInRight'}
-                delay={index * 100}
-              >
-                <div className="text-center group cursor-pointer">
-                  <div className="relative mb-4 sm:mb-6 overflow-hidden rounded-2xl hover-lift">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                      className="w-full h-48 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                    <div className="absolute inset-0 bg-gradient-to-t from-strawberry-600/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 group-hover:text-strawberry-600 transition-colors duration-300">{member.name}</h3>
-                  <p className="text-strawberry-600 font-medium mb-2 text-sm sm:text-base">{member.role}</p>
-                  <p className="text-gray-600 text-xs sm:text-sm">{member.bio}</p>
-                </div>
-              </ScrollAnimations>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* CTA */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-strawberry-600 to-berry-600 text-white parallax">
@@ -214,7 +178,7 @@ const About = () => {
           
           <ScrollAnimations animation="scaleIn" delay={400}>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-md sm:max-w-none mx-auto">
-            <button
+            <button 
               onClick={() => scrollToSection('contact')}
                 className="w-full sm:w-auto bg-white text-strawberry-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-100 hover-lift"
             >

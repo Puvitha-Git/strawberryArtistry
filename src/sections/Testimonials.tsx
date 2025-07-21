@@ -2,6 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 import ScrollAnimations from '../components/ScrollAnimations';
 import ParallaxSection from '../components/ParallaxSection';
+import g6 from '../assets/g6.jpg'
+import g5 from '../assets/g5.jpg'
+import g11 from '../assets/g11.jpg'
+import g15 from '../assets/g15.jpg'
+import g16 from '../assets/g16.jpg'
+import g3 from '../assets/g3.jpg'
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +17,7 @@ const Testimonials = () => {
       id: 1,
       name: "Priya Sharma",
       role: "Bride",
-      image: "https://images.pexels.com/photos/3992656/pexels-photo-3992656.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image:g6,
       content: "I felt absolutely gorgeous on my wedding day thanks to Strawberryartistry's talented team! The bridal makeup was flawless and lasted the entire day. Every guest complimented my look.",
       rating: 5,
       location: "Madurai"
@@ -20,7 +26,7 @@ const Testimonials = () => {
       id: 2,
       name: "Janani Krishnan",
       role: "Beauty Course Student",
-      image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image:g5,
       content: "Their beautician course changed my career path and gave me confidence! The training was comprehensive and the instructors were incredibly supportive. Now I have my own salon!",
       rating: 5,
       location: "Madurai"
@@ -29,7 +35,7 @@ const Testimonials = () => {
       id: 3,
       name: "Divya Reddy",
       role: "Regular Customer",
-      image: "https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image: g11,
       content: "I love how natural my hair extensions look! The quality is amazing and the application was so professional. I've been a loyal customer for 2 years now.",
       rating: 5,
       location: "Madurai"
@@ -38,7 +44,7 @@ const Testimonials = () => {
       id: 4,
       name: "Meera Patel",
       role: "Bride",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image: g15,
       content: "The microblading service was exceptional! My eyebrows look perfect every morning. The artist was skilled and made me feel comfortable throughout the process.",
       rating: 5,
       location: "Madurai"
@@ -47,7 +53,7 @@ const Testimonials = () => {
       id: 5,
       name: "Kavya Nair",
       role: "Working Professional",
-      image: "https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image: g16,
       content: "The nail art here is incredible! I get compliments everywhere I go. The designs are creative and the service is always professional. Highly recommended!",
       rating: 5,
       location: "Madurai"
@@ -56,7 +62,7 @@ const Testimonials = () => {
       id: 6,
       name: "Aishwarya Kumar",
       role: "Bride",
-      image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image: g3,
       content: "My wedding photos turned out amazing thanks to their skilled makeup artists! The attention to detail was incredible and they made my special day perfect.",
       rating: 5,
       location: "Madurai"
